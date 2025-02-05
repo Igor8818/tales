@@ -392,12 +392,49 @@ footer {
     color: var(--bg-color-01);
 }
 
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color-02); 
+    z-index: 998; /* Fica atrás do menu */
+    display: none; /* Escondido por padrão */
+}
+
+/* Mostra o fundo quando o menu abrir */
+.menu-overlay.active {
+    display: block;
+}
+
+/* Certifica que o menu está acima do overlay */
+.nav-responsive {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%; /* Ajuste conforme necessário */
+    height: 100vh;
+    background: var(--bg-color);
+    z-index: 999; /* Fica acima do overlay */
+    transition: left 0.3s ease-in-out;
+}
+
+/* Exibir menu ao clicar */
+.nav-responsive.open {
+    left: 0;
+}
+
+
 /* Exibir o menu hambúrguer apenas em telas menores */
 .menu-hamburguer {
     display: block;
     cursor: pointer;
     z-index: 1000; /* Garante que fique acima de outros elementos */
-    position: relative;
+    position: fixed; /* Agora fica fixo na tela */
+    top: 20px;
+    right: 20px;
 }
 
 /* Barras do menu hambúrguer */
@@ -427,7 +464,7 @@ footer {
     left: -100%; /* Esconde o menu fora da tela */
     width: 100%;
     height: 100vh;
-    background: var(--bg-color);
+    background: var(--bg-color-01);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -646,4 +683,3 @@ footer {
   .escritorio p {
     font-size: 1px;
   }
-
