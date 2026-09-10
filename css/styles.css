@@ -301,7 +301,7 @@ header {
 
 .services-box {
     background-color: var(--bg-color-01);
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 2px solid transparent;
@@ -333,7 +333,7 @@ header {
 .escritorio img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 1.2rem;
     object-fit: cover;
 }
@@ -354,8 +354,8 @@ header {
 .portfolio-box {
     position: relative;
     width: 100%;
-    max-width: 350px;
-    height: 400px;
+    max-width: 300px;
+    height: 320px;
     border-radius: 12px;
     background-color: #1e2430;
     padding: 1rem;
