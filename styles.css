@@ -37,7 +37,6 @@ body {
 
 /* Base Sections */
 section {
-    min-height: 100vh;
     padding: 6rem 1.5rem 3rem;
     display: flex;
     flex-direction: column;
@@ -225,6 +224,7 @@ header {
     border-radius: 50%;
     font-size: 1.5rem;
     color: var(--main-color);
+    background-color: transparent;
     transition: all 0.3s ease;
 }
 
@@ -277,6 +277,10 @@ header {
     border-bottom: 0.6rem solid var(--main-color);
 }
 
+.service {
+    background-color: var(--bg-color-02);
+}
+
 /* Services */
 .services-container {
     display: grid;
@@ -286,7 +290,7 @@ header {
 }
 
 .services-box {
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-01);
     padding: 2.5rem 1.5rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -294,8 +298,9 @@ header {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .services-box:hover {
@@ -325,7 +330,7 @@ header {
 
 /* Portfolio */
 .portfolio {
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-01);
 }
 
 .portfolio-container {
@@ -444,6 +449,7 @@ header {
     border-radius: 50%;
     font-size: 2.5rem;
     color: var(--main-color);
+    background-color: transparent;
     transition: all 0.3s ease;
 }
 
@@ -456,10 +462,11 @@ header {
 
 /* Footer */
 footer {
+    width: 100%;
     text-align: center;
-    padding: 2rem 1.5rem;
-    background-color: var(--bg-color-01);
-    font-size: 0.9rem;
+    padding: 3rem 1.5rem;
+    background-color: var(--bg-color-02);
+    font-size: 1rem;
     color: var(--color-01);
 }
 
