@@ -266,22 +266,18 @@ header {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 238, 255, 0.3);
     transition: all 0.3s ease;
 }
 
-.home-img {
-    border-right: 0.6rem solid var(--main-color);
-    border-bottom: 0.6rem solid var(--main-color);
+.home-img:hover img, .about-img:hover img {
+    box-shadow: 0 10px 40px rgba(0, 238, 255, 0.5);
+    transform: scale(1.02);
 }
 
 .about {
     background-color: var(--bg-color-02);
-}
-
-.about-img {
-    border-left: 0.6rem solid var(--main-color);
-    border-bottom: 0.6rem solid var(--main-color);
 }
 
 .service {
@@ -438,6 +434,11 @@ header {
     text-align: center;
 }
 
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .social-media-a {
     display: flex;
     flex-wrap: wrap;
@@ -450,11 +451,11 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border: 3px solid var(--main-color);
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: var(--main-color);
     background-color: transparent;
     transition: all 0.3s ease;
@@ -512,8 +513,9 @@ footer p {
     .logo {
         font-size: 2.2rem;
     }
-    .social-media {
-        justify-content: flex-start;
+    /* .social-media stays centered as per mobile default */
+    .contact h2 {
+        font-size: 2.5rem;
     }
     section {
         padding: 8rem 5rem 4rem;
@@ -554,25 +556,42 @@ footer p {
         width: 100%;
     }
 
-    .home, .about {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about {
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
     }
-
-    .about {
-        flex-direction: row; 
-    }
     
-    .home-content, .about-content {
+    .home-content {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .about-content {
         width: 55%;
     }
 
-    .home-content p, .about-content p {
+    .about-content p {
         text-align: left;
     }
 
-    .home-img, .about-img {
+    .home-content p {
+        text-align: center;
+    }
+
+    .home-img {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 3rem;
+    }
+
+    .about-img {
         width: 40%;
         max-width: 400px;
     }
