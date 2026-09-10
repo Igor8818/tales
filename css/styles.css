@@ -48,13 +48,15 @@ h1 {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 h2 {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     text-align: center;
+    line-height: 1.6;
 }
 
 h3 {
@@ -81,9 +83,9 @@ header {
     left: 0;
     width: 100%;
     padding: 1.2rem 1.5rem;
-    background-color: rgba(31, 36, 45, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(31, 36, 45, 0.95);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -245,7 +247,7 @@ header {
 .home, .about {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
     text-align: center;
 }
@@ -256,7 +258,7 @@ header {
 
 .home-img, .about-img {
     width: 100%;
-    max-width: 350px;
+    max-width: 270px;
     margin: 0 auto;
     margin-bottom: 2rem;
     position: relative;
@@ -272,8 +274,13 @@ header {
 }
 
 .home-img:hover img, .about-img:hover img {
-    box-shadow: 0 10px 40px rgba(0, 238, 255, 0.5);
-    transform: scale(1.02);
+    box-shadow: 0 15px 50px rgba(0, 238, 255, 0.6);
+    transform: scale(1.05) translateY(-5px);
+}
+
+.about-content:hover h1 {
+    color: var(--main-color);
+    transform: translateX(10px);
 }
 
 .about {
@@ -587,13 +594,13 @@ footer p {
 
     .home-img {
         width: 100%;
-        max-width: 600px;
+        max-width: 450px;
         margin-bottom: 3rem;
     }
 
     .about-img {
         width: 40%;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .portfolio-container {
