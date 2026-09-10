@@ -46,15 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const revealOptions = {
-        threshold: 0.1, // Trigger when 10% of the element is visible
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.15, 
+        rootMargin: "0px 0px -30px 0px"
     };
 
     const revealOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Unobserve after animating once
+                // Small delay for stagger effect
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, index * 150);
+                observer.unobserve(entry.target);
             }
         });
     }, revealOptions);
