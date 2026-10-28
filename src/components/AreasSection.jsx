@@ -71,7 +71,7 @@ export const AreasSection = () => {
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-xl bg-[#F7F4EE] border border-[#B8924A]/20">
                   <Phone className="w-4 h-4 text-[#B8924A] flex-shrink-0" />
-                  <span className="font-semibold">{TALES_INFO.phoneOffice}</span>
+                  <span className="font-semibold">{TALES_INFO.phoneDirect}</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-xl bg-[#F7F4EE] border border-[#B8924A]/20">
                   <Mail className="w-4 h-4 text-[#B8924A] flex-shrink-0" />

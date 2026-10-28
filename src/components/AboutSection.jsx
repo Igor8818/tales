@@ -137,9 +137,11 @@ export const AboutSection = ({ photos }) => {
                         {item.period}
                       </span>
                     </div>
-                    <p className="text-xs sm:text-sm text-[#B8924A] font-semibold mb-1.5">
-                      {item.institution}
-                    </p>
+                    {item.institution && (
+                      <p className="text-xs sm:text-sm text-[#B8924A] font-semibold mb-1.5">
+                        {item.institution}
+                      </p>
+                    )}
                     <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
                       {item.description}
                     </p>

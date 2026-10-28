@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Phone,
   Mail,
   MapPin,
   ArrowRight,
@@ -68,20 +67,6 @@ export const ContactSection = () => {
                   </span>
                 </div>
               </a>
-
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-[#112340] border border-slate-700/80">
-                <div className="w-12 h-12 rounded-xl bg-[#0B1B33] border border-slate-700 flex items-center justify-center flex-shrink-0 text-[#E6CA85]">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs text-slate-400 font-medium block">
-                    Telefone Escritório (Almeida &amp; Korontai)
-                  </span>
-                  <span className="text-sm sm:text-base font-bold text-white">
-                    {TALES_INFO.phoneOffice}
-                  </span>
-                </div>
-              </div>
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-[#112340] border border-slate-700/80">
                 <div className="w-12 h-12 rounded-xl bg-[#0B1B33] border border-slate-700 flex items-center justify-center flex-shrink-0 text-[#E6CA85]">

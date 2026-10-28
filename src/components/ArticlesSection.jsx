@@ -17,7 +17,7 @@ export const ArticlesSection = () => {
           {/* Linha decorativa dourada */}
           <div className="w-16 h-1 bg-[#B8924A] mx-auto rounded-full mt-2 mb-3" />
           <p className="text-[#4A5568] text-base sm:text-lg leading-relaxed">
-            Pesquisas e estudos jurídicos publicados em periódicos científicos, anais acadêmicos e indexados na Biblioteca Digital do <strong className="text-[#1A2233] font-semibold">Tribunal Superior do Trabalho (JusLaboris/TST)</strong>.
+            Pesquisas e estudos jurídicos publicados em periódicos científicos, anais acadêmicos e repositórios digitais especializados, contribuindo para a produção e a disseminação do conhecimento jurídico e científico.
           </p>
         </div>
 

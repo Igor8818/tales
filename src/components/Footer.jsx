@@ -33,7 +33,7 @@ export const Footer = () => {
             </div>
 
             <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
-              Mestre pela UESC, Membro Imortal da ALJUSBA (Cadeira nº 20) e Professor Universitário de Direito. Atuação pautada pela combatividade técnica e excelência na docência e advocacia.
+              Especialista em Direito do Trabalho e Mestre em Economia Regional e Políticas Públicas pela UESC. Membro Imortal da Academia de Letras Jurídicas do Sul da Bahia (ALJUSBA), ocupante da Cadeira nº 20, e Professor Universitário de Direito. Sua trajetória acadêmica e profissional é marcada pelo rigor técnico, pela atuação jurídica combativa e pelo compromisso permanente com a excelência na advocacia e na docência.
             </p>
 
             <div className="flex items-center gap-2 pt-1">
@@ -107,11 +107,10 @@ export const Footer = () => {
               Atendimento Jurídico
             </h5>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Itabuna, Ilhéus, Vitória da Conquista, Salvador — BA e atendimento eletrônico em todo o território nacional.
+              Atendimento jurídico presencial em Itabuna, Ilhéus, Vitória da Conquista e Salvador (BA), com atendimento on-line em todo o território nacional.
             </p>
             <div className="space-y-1 pt-1 font-mono text-[11px] text-slate-300">
               <p>WhatsApp: {TALES_INFO.phoneDirect}</p>
-              <p>Escritório: {TALES_INFO.phoneOffice}</p>
               <p>E-mail: {TALES_INFO.emailDirect}</p>
             </div>
           </div>

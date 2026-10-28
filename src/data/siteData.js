@@ -30,7 +30,6 @@ export const TALES_INFO = {
   officeBookLogo: './images/Livro1.jpg',
   city: 'Itabuna, Ilhéus, Vitória da Conquista e Salvador — BA',
   phoneDirect: '+55 (73) 99145-4652',
-  phoneOffice: '(73) 98150-7303',
   whatsappNumber: '557391454652',
   whatsappUrl: 'https://wa.me/557391454652?text=Ol%C3%A1%2C%20Dr.%20Tales%20Almeida!%20Gostaria%20de%20agendar%20um%20atendimento.',
   emailDirect: 'tales@almeidakorontai.com.br',
@@ -160,14 +159,14 @@ export const CREDENCIAIS_TABS = {
         title: 'Professor do Curso de Direito — UNEX',
         institution: 'Centro Universitário de Excelência (UNEX)',
         description:
-          'Docente do Ensino Superior no curso de graduação em Direito, unindo formação teórica crítica e vivência prática da advocacia.'
+          'Atuação no magistério superior, com docência nas áreas de Direito Processual do Trabalho, Direito Processual Civil, Seguridade Social e Práticas Jurídicas Civil e Trabalhista, integrando fundamentação teórica, formação crítica e experiência profissional, com ênfase no desenvolvimento de competências jurídicas e no compromisso com o ensino, a pesquisa e a extensão universitária.'
       },
       {
-        period: '2024 — Atual',
-        title: 'Professor do Curso de Direito — Faculdade Anhanguera',
+        period: '2024 — 2026',
+        title: 'Professor do Curso de Direito — Anhanguera de Itabuna',
         institution: 'Faculdade Anhanguera de Itabuna',
         description:
-          'Atuação no magistério superior formando novos juristas nas disciplinas de Direito e Processo, com foco na pesquisa e extensão universitária.'
+          'Atuação no magistério superior, com docência nas áreas de Direito do Trabalho, Direito Processual do Trabalho, Direito Civil (Obrigações e Contratos), Direito Processual Civil e Prática Trabalhista, aliando sólida formação teórica à aplicação prática do conhecimento jurídico, com compromisso com o ensino, a pesquisa e a extensão universitária.'
       },
       {
         period: 'Imortal Titular',
@@ -179,9 +178,8 @@ export const CREDENCIAIS_TABS = {
       {
         period: 'Contínuo',
         title: 'Parecerista de Periódicos e Pesquisador',
-        institution: 'Grupo de Pesquisa em Direito do Trabalho',
         description:
-          'Avaliador de revistas jurídicas científicas e pesquisador dedicado à linha de Negociação Coletiva do Trabalho e transformações do mundo laboral.'
+          'Avaliador de periódicos científicos jurídicos e pesquisador com atuação interdisciplinar nas áreas de Direito do Trabalho, Direito Coletivo do Trabalho, Direito Processual do Trabalho, Economia do Trabalho e Direito Processual Civil, dedicando-se à produção científica e à análise crítica das transformações jurídicas, econômicas e sociais.'
       }
     ]
   },
@@ -194,14 +192,14 @@ export const CREDENCIAIS_TABS = {
         title: 'Mestre em Economia Regional e Políticas Públicas',
         institution: 'Universidade Estadual de Santa Cruz (UESC)',
         description:
-          'Mestrado acadêmico com pesquisa interdisciplinar voltada ao desenvolvimento socioeconômico, políticas públicas e impactos nas relações jurídicas e sociais.'
+          'Mestrado acadêmico em Economia Regional e Políticas Públicas, com pesquisa concentrada na área de Economia do Trabalho, abrangendo as dinâmicas do mercado de trabalho, as desigualdades socioeconômicas, o desenvolvimento regional e as interações entre políticas públicas, emprego e renda.'
       },
       {
         period: '2024',
         title: 'Pós-Graduado em Direito Previdenciário',
         institution: 'Faculdade 2 de Julho / CEJAS',
         description:
-          'Especialização Lato Sensu com aprofundamento no Regime Geral e Regimes Próprios de Previdência Social, benefícios e processo previdenciário.'
+          'Especialização lato sensu com aprofundamento nos Regimes Geral e Próprios de Previdência Social, abrangendo a proteção previdenciária, os benefícios, seus requisitos de concessão e os aspectos jurídicos e processuais do Direito Previdenciário.'
       },
       {
         period: '2021',
