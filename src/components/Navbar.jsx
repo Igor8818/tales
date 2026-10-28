@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, Camera } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { TALES_INFO } from '../data/siteData';
 
-export const Navbar = ({ onOpenPhotoCustomizer }) => {
+export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -67,18 +67,8 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
             ))}
           </nav>
 
-          {/* Action Buttons */}
+          {/* Action Button */}
           <div className="hidden sm:flex items-center gap-3">
-            {onOpenPhotoCustomizer && (
-              <button
-                onClick={onOpenPhotoCustomizer}
-                className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors border border-[#B8924A]/40 bg-[#0B1B33]/60 text-xs flex items-center gap-1.5 shadow-sm"
-                title="Personalizar foto em exibição"
-              >
-                <Camera className="w-3.5 h-3.5 text-[#B8924A]" />
-                <span className="hidden lg:inline text-[11px] font-medium">Foto</span>
-              </button>
-            )}
             <a
               href={TALES_INFO.whatsappUrl}
               target="_blank"
@@ -92,15 +82,6 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
 
           {/* Mobile Menu Button */}
           <div className="flex sm:hidden items-center gap-2">
-            {onOpenPhotoCustomizer && (
-              <button
-                onClick={onOpenPhotoCustomizer}
-                className="p-2 rounded-lg text-slate-300 hover:text-white bg-[#0B1B33] border border-[#B8924A]/40"
-                aria-label="Trocar Foto"
-              >
-                <Camera className="w-4 h-4 text-[#B8924A]" />
-              </button>
-            )}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-slate-200 hover:text-white bg-[#0B1B33] border border-slate-700"

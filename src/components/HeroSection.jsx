@@ -134,11 +134,11 @@ export const HeroSection = ({ photos }) => {
               {/* Foto Principal Nítida */}
               <div className="relative z-10 w-full h-full flex items-end justify-center overflow-hidden rounded-2xl pt-3 sm:pt-4">
                 <img
-                  src={photos?.hero || './images/principal.png'}
+                  src={photos?.hero || './images/Inicio.png'}
                   alt="Dr. Tales Almeida"
                   className="w-full h-full object-contain object-bottom drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)] transition-all duration-500 filter contrast-105"
                   onError={(e) => {
-                    e.target.src = './images/tales-office.jpg';
+                    e.target.src = './images/Inicio.png';
                   }}
                 />
               </div>

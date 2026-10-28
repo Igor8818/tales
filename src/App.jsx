@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AreasSection } from './components/AreasSection';
@@ -6,57 +6,26 @@ import { AboutSection } from './components/AboutSection';
 import { ArticlesSection } from './components/ArticlesSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import { PhotoCustomizerModal } from './components/PhotoCustomizerModal';
 import { WhatsAppIcon } from './components/Icons';
 import { DEFAULT_LAWYER_PHOTOS, TALES_INFO } from './data/siteData';
 
 export default function App() {
-  const [photos, setPhotos] = useState(() => {
-    try {
-      const saved = localStorage.getItem('tales_photos_v2');
-      if (saved) return JSON.parse(saved);
-    } catch (e) {
-      // ignore
-    }
-    return DEFAULT_LAWYER_PHOTOS;
-  });
-
-  const [isPhotoCustomizerOpen, setIsPhotoCustomizerOpen] = useState(false);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('tales_photos_v2', JSON.stringify(photos));
-    } catch (e) {
-      // ignore
-    }
-  }, [photos]);
-
   return (
     <div className="min-h-screen bg-[#0B1B33] text-[#1A2233] flex flex-col font-sans selection:bg-[#B8924A] selection:text-[#0B1B33]">
       {/* Navegação Fixa */}
-      <Navbar
-        onOpenPhotoCustomizer={() => setIsPhotoCustomizerOpen(true)}
-      />
+      <Navbar />
 
       {/* Conteúdo com Ritmo e Alternância (Navy -> Off-white -> Navy -> Off-white -> Navy) */}
       <main className="flex-1">
-        <HeroSection photos={photos} />
+        <HeroSection photos={DEFAULT_LAWYER_PHOTOS} />
         <AreasSection />
-        <AboutSection photos={photos} />
+        <AboutSection photos={DEFAULT_LAWYER_PHOTOS} />
         <ArticlesSection />
         <ContactSection />
       </main>
 
       {/* Rodapé Institucional */}
       <Footer />
-
-      {/* Modal de Personalização de Fotografias */}
-      <PhotoCustomizerModal
-        isOpen={isPhotoCustomizerOpen}
-        onClose={() => setIsPhotoCustomizerOpen(false)}
-        photos={photos}
-        setPhotos={setPhotos}
-      />
 
       {/* Botão Flutuante de WhatsApp Discreto com Sombra Suave */}
       <a

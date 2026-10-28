@@ -43,7 +43,7 @@ export const TALES_INFO = {
 };
 
 export const DEFAULT_LAWYER_PHOTOS = {
-  hero: './images/principal.png',
+  hero: './images/Inicio.png',
   about: './images/tales-office.jpg',
   contact: './images/secundaria.png',
 };
