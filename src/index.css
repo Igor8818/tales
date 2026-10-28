@@ -3,12 +3,13 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #F8FAFC;
-    color: #1E293B;
+    color: #1A2233;
+    line-height: 1.7;
   }
 
   h1, h2, h3, .font-serif-editorial {
     font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -23,4 +24,19 @@
 
 .animate-spin-slow {
   animation: spinSlow 24s linear infinite;
+}
+
+/* Utilitários dourados executivos */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #E6CA85 0%, #B8924A 50%, #D4AF6A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #B8924A 0%, #C9A45C 50%, #B8924A 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px -3px rgba(184, 146, 74, 0.25);
 }

@@ -16,7 +16,7 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
 
   const navLinks = [
     { label: 'Início', href: '#inicio' },
-    { label: 'Atuação & Escritório', href: '#atuacao' },
+    { label: 'Especialidades', href: '#atuacao' },
     { label: 'Perfil & Cátedra', href: '#sobre' },
     { label: 'Artigos', href: '#artigos' },
     { label: 'Contato', href: '#contato' },
@@ -26,7 +26,7 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-3.5'
+          ? 'bg-[#0B1B33]/95 backdrop-blur-md border-b-2 border-[#B8924A] shadow-xl shadow-black/20 py-3.5'
           : 'bg-transparent py-5'
       }`}
     >
@@ -34,7 +34,7 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
         <div className="flex items-center justify-between">
           {/* Logo / Nome */}
           <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg overflow-hidden border border-slate-200 bg-slate-900 flex-shrink-0 group-hover:border-[#0284C7] shadow-sm transition-colors">
+            <div className="w-10 h-10 rounded-lg overflow-hidden border border-[#B8924A]/50 bg-[#0B1B33] flex-shrink-0 group-hover:border-[#D4AF6A] shadow-md transition-colors">
               <img
                 src={TALES_INFO.officeLogo}
                 alt="Logo Almeida & Korontai"
@@ -45,10 +45,10 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
               />
             </div>
             <div>
-              <span className="font-serif-editorial text-xl sm:text-2xl font-bold tracking-tight text-slate-900 group-hover:text-[#0284C7] transition-colors block leading-tight">
+              <span className="font-serif-editorial text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-[#D4AF6A] transition-colors block leading-tight">
                 Tales Almeida
               </span>
-              <span className="text-[10px] sm:text-xs text-slate-500 font-medium tracking-wider uppercase block">
+              <span className="text-[10px] sm:text-xs text-[#B8924A] font-semibold tracking-wider uppercase block">
                 Advocacia • Docência • Jurista
               </span>
             </div>
@@ -60,7 +60,7 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-[#0284C7] transition-colors"
+                className="text-sm font-medium text-slate-200 hover:text-[#D4AF6A] transition-colors"
               >
                 {link.label}
               </a>
@@ -72,10 +72,10 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
             {onOpenPhotoCustomizer && (
               <button
                 onClick={onOpenPhotoCustomizer}
-                className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors border border-slate-200 bg-white text-xs flex items-center gap-1.5 shadow-sm"
+                className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors border border-[#B8924A]/40 bg-[#0B1B33]/60 text-xs flex items-center gap-1.5 shadow-sm"
                 title="Personalizar foto em exibição"
               >
-                <Camera className="w-3.5 h-3.5 text-[#0284C7]" />
+                <Camera className="w-3.5 h-3.5 text-[#B8924A]" />
                 <span className="hidden lg:inline text-[11px] font-medium">Foto</span>
               </button>
             )}
@@ -83,10 +83,10 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
               href={TALES_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#0F294A] to-[#1E3A8A] text-white font-semibold text-xs sm:text-sm shadow-md shadow-blue-950/15 hover:shadow-blue-950/30 hover:opacity-95 transition-all transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#B8924A] hover:bg-[#D4AF6A] text-[#0B1B33] font-bold text-xs sm:text-sm shadow-md shadow-[#B8924A]/20 hover:shadow-[#B8924A]/40 transition-all transform hover:-translate-y-0.5"
             >
               <span>Falar com Dr. Tales</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
           </div>
 
@@ -95,18 +95,18 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
             {onOpenPhotoCustomizer && (
               <button
                 onClick={onOpenPhotoCustomizer}
-                className="p-2 rounded-lg text-slate-600 hover:text-slate-900 bg-white border border-slate-200 shadow-sm"
+                className="p-2 rounded-lg text-slate-300 hover:text-white bg-[#0B1B33] border border-[#B8924A]/40"
                 aria-label="Trocar Foto"
               >
-                <Camera className="w-4 h-4 text-[#0284C7]" />
+                <Camera className="w-4 h-4 text-[#B8924A]" />
               </button>
             )}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-700 hover:text-slate-900 bg-white border border-slate-200 shadow-sm"
+              className="p-2 rounded-lg text-slate-200 hover:text-white bg-[#0B1B33] border border-slate-700"
               aria-label="Abrir Menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
             </button>
           </div>
         </div>
@@ -114,24 +114,24 @@ export const Navbar = ({ onOpenPhotoCustomizer }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-6 py-5 space-y-4 shadow-xl">
+        <div className="md:hidden bg-[#0B1B33]/98 backdrop-blur-xl border-b-2 border-[#B8924A] px-6 py-5 space-y-4 shadow-2xl">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-base font-medium text-slate-700 hover:text-[#0284C7] transition-colors py-1"
+              className="block text-base font-medium text-slate-200 hover:text-[#D4AF6A] transition-colors py-1"
             >
               {link.label}
             </a>
           ))}
-          <div className="pt-3 border-t border-slate-100">
+          <div className="pt-3 border-t border-slate-700/80">
             <a
               href={TALES_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-[#0F294A] to-[#1E3A8A] text-white font-semibold text-sm shadow-md"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#B8924A] hover:bg-[#D4AF6A] text-[#0B1B33] font-bold text-sm shadow-md"
             >
               <span>Falar pelo WhatsApp</span>
               <ArrowUpRight className="w-4 h-4" />
