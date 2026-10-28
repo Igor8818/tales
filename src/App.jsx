@@ -32,7 +32,7 @@ export default function App() {
   }, [photos]);
 
   return (
-    <div className="min-h-screen bg-[#0B111E] text-slate-100 flex flex-col font-sans selection:bg-[#00D2EB] selection:text-[#0B111E]">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col font-sans selection:bg-[#0284C7] selection:text-white">
       {/* Navegação Fixa */}
       <Navbar
         onOpenPhotoCustomizer={() => setIsPhotoCustomizerOpen(true)}

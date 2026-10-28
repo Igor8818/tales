@@ -3,8 +3,8 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #0B111E;
-    color: #F1F5F9;
+    background-color: #F8FAFC;
+    color: #1E293B;
   }
 
   h1, h2, h3, .font-serif-editorial {

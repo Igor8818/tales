@@ -22,25 +22,25 @@ export const PhotoCustomizerModal = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-[#0F172A] border border-slate-700 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-7 relative shadow-2xl space-y-6">
-        <div className="flex items-center justify-between pb-4 border-b border-slate-800">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
+      <div className="bg-white border border-slate-200 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-7 relative shadow-2xl space-y-6">
+        <div className="flex items-center justify-between pb-4 border-b border-slate-200">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-[#00D2EB]/15 flex items-center justify-center text-[#00D2EB]">
+            <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center text-[#0F294A]">
               <Camera className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-base font-semibold text-white">
+              <h3 className="text-base font-bold text-slate-900">
                 Galeria &amp; Fotos de Dr. Tales
               </h3>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-slate-500">
                 Selecione qual fotografia você prefere ver no destaque principal.
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-800 transition-colors"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 bg-slate-100 transition-colors"
           >
             <X className="w-4 h-4" />
           </button>
@@ -48,7 +48,7 @@ export const PhotoCustomizerModal = ({
 
         {/* Escolha da Foto Principal (Hero) */}
         <div className="space-y-3">
-          <label className="text-xs font-semibold text-slate-300 uppercase tracking-wider block">
+          <label className="text-xs font-bold text-slate-700 uppercase tracking-wider block">
             Foto do Destaque Principal (Início):
           </label>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -60,22 +60,22 @@ export const PhotoCustomizerModal = ({
                   onClick={() => handleSelectPreset('hero', preset.url)}
                   className={`group relative rounded-xl overflow-hidden border p-1 text-left transition-all ${
                     isSelected
-                      ? 'border-[#00D2EB] bg-[#00D2EB]/10 ring-2 ring-[#00D2EB]/30'
-                      : 'border-slate-800 bg-slate-900 hover:border-slate-700'
+                      ? 'border-[#0284C7] bg-sky-50 ring-2 ring-[#0284C7]/20 shadow-sm'
+                      : 'border-slate-200 bg-slate-50 hover:border-slate-300'
                   }`}
                 >
-                  <div className="aspect-[3/4] w-full rounded-lg overflow-hidden bg-slate-950 mb-2">
+                  <div className="aspect-[3/4] w-full rounded-lg overflow-hidden bg-slate-100 mb-2">
                     <img
                       src={preset.url}
                       alt={preset.label}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform"
                     />
                   </div>
-                  <span className="text-[11px] font-medium text-slate-200 line-clamp-1 block px-1">
+                  <span className="text-[11px] font-semibold text-slate-700 line-clamp-1 block px-1">
                     {preset.label}
                   </span>
                   {isSelected && (
-                    <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-[#00D2EB] text-[#0B111E] flex items-center justify-center shadow">
+                    <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-[#0F294A] text-white flex items-center justify-center shadow">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </div>
                   )}
@@ -86,10 +86,10 @@ export const PhotoCustomizerModal = ({
         </div>
 
         {/* Rodapé do Modal */}
-        <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
+        <div className="pt-4 border-t border-slate-200 flex items-center justify-between">
           <button
             onClick={handleReset}
-            className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-800 transition-colors font-medium"
           >
             <RefreshCw className="w-3.5 h-3.5" />
             <span>Restaurar padrão</span>
@@ -97,7 +97,7 @@ export const PhotoCustomizerModal = ({
 
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#00D2EB] to-[#0284c7] text-[#0B111E] font-bold text-xs shadow-md shadow-[#00D2EB]/20 hover:opacity-95 transition-opacity"
+            className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#0F294A] to-[#1E3A8A] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all"
           >
             Concluir
           </button>
