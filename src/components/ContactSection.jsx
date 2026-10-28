@@ -28,7 +28,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="py-24 md:py-32 bg-[#0B1B33] text-white relative overflow-hidden">
+    <section id="contato" className="py-16 md:py-28 bg-[#0B1B33] text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Coluna Esquerda: Canais Diretos */}

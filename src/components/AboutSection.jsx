@@ -14,7 +14,7 @@ export const AboutSection = ({ photos }) => {
   const currentTab = CREDENCIAIS_TABS[activeTabKey];
 
   return (
-    <section id="sobre" className="py-24 md:py-32 bg-[#0B1B33] text-white relative overflow-hidden">
+    <section id="sobre" className="py-16 md:py-28 bg-[#0B1B33] text-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#B8924A]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl pointer-events-none" />
@@ -22,7 +22,7 @@ export const AboutSection = ({ photos }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Coluna Esquerda: Retrato no Escritório & Destaque ALJUSBA */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 max-w-[320px] sm:max-w-[380px] lg:max-w-none mx-auto w-full">
             <div className="relative rounded-2xl overflow-hidden border-2 border-[#B8924A]/40 shadow-2xl bg-[#112340] group">
               <div className="aspect-[3/4] w-full overflow-hidden">
                 <img

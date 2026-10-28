@@ -4,7 +4,7 @@ import { ARTIGOS_PUBLICADOS } from '../data/siteData';
 
 export const ArticlesSection = () => {
   return (
-    <section id="artigos" className="py-24 md:py-32 bg-[#F7F4EE] border-t border-b border-[#B8924A]/20 relative">
+    <section id="artigos" className="py-16 md:py-28 bg-[#F7F4EE] border-t border-b border-[#B8924A]/20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
