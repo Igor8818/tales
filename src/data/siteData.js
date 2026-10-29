@@ -238,9 +238,9 @@ export const CREDENCIAIS_TABS = {
       {
         period: '2011 — 2013',
         title: 'Estagiário do Ministério Público do Estado da Bahia',
-        institution: '13ª Promotoria Regional de Justiça — MP/BA',
+        institution: '13ª Promotoria Regional de Justiça — MPBA',
         description:
-          'Vivência prática institucional junto ao Ministério Público da Bahia, atuando no acompanhamento processual e na defesa da ordem jurídica.'
+          'Vivência prática institucional no âmbito do Ministério Público do Estado da Bahia, com atuação no acompanhamento de procedimentos e processos, contribuindo para a defesa da ordem jurídica e a promoção dos interesses sociais.'
       }
     ]
   }

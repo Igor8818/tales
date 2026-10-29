@@ -49,7 +49,7 @@ export const Navbar = () => {
                 Tales Almeida
               </span>
               <span className="text-[10px] sm:text-xs text-[#B8924A] font-semibold tracking-wider uppercase block">
-                Advocacia • Docência • Jurista
+                Advogado • Docente • Jurista
               </span>
             </div>
           </a>
@@ -75,7 +75,7 @@ export const Navbar = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#B8924A] hover:bg-[#D4AF6A] text-[#0B1B33] font-bold text-xs sm:text-sm shadow-md shadow-[#B8924A]/20 hover:shadow-[#B8924A]/40 transition-all transform hover:-translate-y-0.5"
             >
-              <span>Falar com Dr. Tales</span>
+              <span>Falar com Dr. Tales Almeida</span>
               <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
           </div>

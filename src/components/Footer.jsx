@@ -32,7 +32,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
+            <p className="text-slate-300 text-xs leading-relaxed max-w-sm text-justify">
               Especialista em Direito do Trabalho e Mestre em Economia Regional e Políticas Públicas pela UESC. Membro Imortal da Academia de Letras Jurídicas do Sul da Bahia (ALJUSBA), ocupante da Cadeira nº 20, e Professor Universitário de Direito. Sua trajetória acadêmica e profissional é marcada pelo rigor técnico, pela atuação jurídica combativa e pelo compromisso permanente com a excelência na advocacia e na docência.
             </p>
 

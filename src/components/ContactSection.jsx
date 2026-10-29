@@ -60,7 +60,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <span className="text-xs text-[#E6CA85] font-bold block uppercase tracking-wider">
-                    WhatsApp Direto (Dr. Tales)
+                    WhatsApp Direto (Dr. Tales Almeida)
                   </span>
                   <span className="text-base font-bold text-white">
                     {TALES_INFO.phoneDirect}

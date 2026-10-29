@@ -21,16 +21,16 @@ export const HeroSection = ({ photos }) => {
             {/* Tag Institucional Dourada */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-[#112340] border border-[#B8924A]/50 text-[11px] sm:text-xs text-[#E6CA85] font-semibold tracking-wide shadow-md max-w-full truncate">
               <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-[#B8924A] animate-pulse flex-shrink-0" />
-              <span className="truncate">Almeida &amp; Korontai • Mestre UESC • ALJUSBA Cadeira nº 20</span>
+              <span className="truncate">Almeida &amp; Korontai • LEAD • UESC • ALJUSBA Cadeira n. 20</span>
             </div>
 
             {/* Headline Principal - Tamanho Fluido Perfeito para Mobile & Desktop */}
             <h1 className="font-serif-editorial text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12]">
-              Advocacia estratégica,{' '}
+              Formando profissionais e{' '}
               <span className="text-[#B8924A] italic font-semibold">
-                docência superior
+                defendendo direitos
               </span>{' '}
-              e rigor jurídico.
+              com estratégia e prática.
             </h1>
 
             {/* Subtítulo com excelente contraste */}
@@ -80,9 +80,6 @@ export const HeroSection = ({ photos }) => {
               <div className="text-center lg:text-left">
                 <span className="font-serif-editorial text-xl sm:text-2xl lg:text-3xl font-bold text-[#E6CA85] block leading-none">
                   6 Artigos
-                </span>
-                <span className="text-[10px] sm:text-xs text-slate-300 font-medium tracking-wide mt-1 block">
-                  JusLaboris/TST
                 </span>
               </div>
             </div>
@@ -155,7 +152,7 @@ export const HeroSection = ({ photos }) => {
                       />
                       <text className="text-[7.5px] uppercase tracking-[0.24em] fill-[#E6CA85] font-bold">
                         <textPath xlinkHref="#circlePathHeroGold">
-                          • ADVOCACIA • DOCÊNCIA • JURISTA •
+                          • ADVOGADO • DOCENTE • JURISTA •
                         </textPath>
                       </text>
                     </svg>
@@ -164,14 +161,13 @@ export const HeroSection = ({ photos }) => {
                 </div>
               </div>
 
-              {/* Floating Badge - Escritório */}
+              {/* Floating Badge - Dr. Tales Almeida */}
               <div className="absolute -bottom-2 left-2 sm:left-4 z-20 bg-[#0B1B33]/95 border border-[#B8924A]/40 backdrop-blur-md px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-xl shadow-xl flex items-center gap-1.5 sm:gap-2">
                 <div className="w-5 h-5 sm:w-7 sm:h-7 rounded-lg bg-[#B8924A]/20 flex items-center justify-center flex-shrink-0">
                   <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#E6CA85]" />
                 </div>
                 <div>
-                  <p className="text-[8px] sm:text-[9px] text-[#B8924A] font-semibold uppercase tracking-wider">Escritório</p>
-                  <p className="text-[10px] sm:text-xs font-bold text-white">Almeida &amp; Korontai</p>
+                  <p className="text-[10px] sm:text-xs font-bold text-white">Dr. Tales Almeida</p>
                 </div>
               </div>
             </div>
